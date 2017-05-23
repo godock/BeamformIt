@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		162949391ED3D0DB0007ACDE /* BeamformIt.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1629492F1ED3D0DB0007ACDE /* BeamformIt.cc */; };
+		1629493A1ED3D0DB0007ACDE /* delaysum.cc in Sources */ = {isa = PBXBuildFile; fileRef = 162949301ED3D0DB0007ACDE /* delaysum.cc */; };
+		1629493B1ED3D0DB0007ACDE /* fileinout.cc in Sources */ = {isa = PBXBuildFile; fileRef = 162949311ED3D0DB0007ACDE /* fileinout.cc */; };
+		1629493C1ED3D0DB0007ACDE /* parse_options.cc in Sources */ = {isa = PBXBuildFile; fileRef = 162949321ED3D0DB0007ACDE /* parse_options.cc */; };
+		1629493D1ED3D0DB0007ACDE /* support.cc in Sources */ = {isa = PBXBuildFile; fileRef = 162949331ED3D0DB0007ACDE /* support.cc */; };
+		1629493E1ED3D0DB0007ACDE /* tdoa.cc in Sources */ = {isa = PBXBuildFile; fileRef = 162949341ED3D0DB0007ACDE /* tdoa.cc */; };
+		162949411ED3D2CD0007ACDE /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 162949401ED3D2CD0007ACDE /* libsndfile.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		162948E51ED3CFE20007ACDE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		162948E71ED3CFE20007ACDE /* BeamformIt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BeamformIt; sourceTree = BUILT_PRODUCTS_DIR; };
+		162948F71ED3D0DB0007ACDE /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		162948F81ED3D0DB0007ACDE /* Array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		162948F91ED3D0DB0007ACDE /* def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		162948FA1ED3D0DB0007ACDE /* DynArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynArray.h; sourceTree = "<group>"; };
+		162948FB1ED3D0DB0007ACDE /* DynArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DynArray.hpp; sourceTree = "<group>"; };
+		162948FC1ED3D0DB0007ACDE /* FFTReal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTReal.h; sourceTree = "<group>"; };
+		162948FD1ED3D0DB0007ACDE /* FFTReal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FFTReal.hpp; sourceTree = "<group>"; };
+		162948FE1ED3D0DB0007ACDE /* FFTRealFixLen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTRealFixLen.h; sourceTree = "<group>"; };
+		162948FF1ED3D0DB0007ACDE /* FFTRealFixLen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FFTRealFixLen.hpp; sourceTree = "<group>"; };
+		162949001ED3D0DB0007ACDE /* FFTRealFixLenParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTRealFixLenParam.h; sourceTree = "<group>"; };
+		162949011ED3D0DB0007ACDE /* FFTRealPassDirect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTRealPassDirect.h; sourceTree = "<group>"; };
+		162949021ED3D0DB0007ACDE /* FFTRealPassDirect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FFTRealPassDirect.hpp; sourceTree = "<group>"; };
+		162949031ED3D0DB0007ACDE /* FFTRealPassInverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTRealPassInverse.h; sourceTree = "<group>"; };
+		162949041ED3D0DB0007ACDE /* FFTRealPassInverse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FFTRealPassInverse.hpp; sourceTree = "<group>"; };
+		162949051ED3D0DB0007ACDE /* FFTRealSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTRealSelect.h; sourceTree = "<group>"; };
+		162949061ED3D0DB0007ACDE /* FFTRealSelect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FFTRealSelect.hpp; sourceTree = "<group>"; };
+		162949071ED3D0DB0007ACDE /* FFTRealUseTrigo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTRealUseTrigo.h; sourceTree = "<group>"; };
+		162949081ED3D0DB0007ACDE /* FFTRealUseTrigo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FFTRealUseTrigo.hpp; sourceTree = "<group>"; };
+		162949091ED3D0DB0007ACDE /* OscSinCos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscSinCos.h; sourceTree = "<group>"; };
+		1629490A1ED3D0DB0007ACDE /* OscSinCos.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OscSinCos.hpp; sourceTree = "<group>"; };
+		162949261ED3D0DB0007ACDE /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		162949281ED3D0DB0007ACDE /* delaysum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delaysum.h; sourceTree = "<group>"; };
+		162949291ED3D0DB0007ACDE /* fileinout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileinout.h; sourceTree = "<group>"; };
+		1629492A1ED3D0DB0007ACDE /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		1629492B1ED3D0DB0007ACDE /* parse_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse_options.h; sourceTree = "<group>"; };
+		1629492C1ED3D0DB0007ACDE /* support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = support.h; sourceTree = "<group>"; };
+		1629492D1ED3D0DB0007ACDE /* tdoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tdoa.h; sourceTree = "<group>"; };
+		1629492F1ED3D0DB0007ACDE /* BeamformIt.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BeamformIt.cc; sourceTree = "<group>"; };
+		162949301ED3D0DB0007ACDE /* delaysum.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = delaysum.cc; sourceTree = "<group>"; };
+		162949311ED3D0DB0007ACDE /* fileinout.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fileinout.cc; sourceTree = "<group>"; };
+		162949321ED3D0DB0007ACDE /* parse_options.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parse_options.cc; sourceTree = "<group>"; };
+		162949331ED3D0DB0007ACDE /* support.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = support.cc; sourceTree = "<group>"; };
+		162949341ED3D0DB0007ACDE /* tdoa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tdoa.cc; sourceTree = "<group>"; };
+		162949401ED3D2CD0007ACDE /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = ../../../../usr/local/lib/libsndfile.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		162948E41ED3CFE20007ACDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162949411ED3D2CD0007ACDE /* libsndfile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		162948DE1ED3CFE20007ACDE = {
+			isa = PBXGroup;
+			children = (
+				162948F11ED3D0DB0007ACDE /* external */,
+				162949271ED3D0DB0007ACDE /* includes */,
+				1629492E1ED3D0DB0007ACDE /* src */,
+				162948E81ED3CFE20007ACDE /* Products */,
+				1629493F1ED3D2CD0007ACDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		162948E81ED3CFE20007ACDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				162948E71ED3CFE20007ACDE /* BeamformIt */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		162948F11ED3D0DB0007ACDE /* external */ = {
+			isa = PBXGroup;
+			children = (
+				162948F21ED3D0DB0007ACDE /* FFTReal-2.11 */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		162948F21ED3D0DB0007ACDE /* FFTReal-2.11 */ = {
+			isa = PBXGroup;
+			children = (
+				162948F61ED3D0DB0007ACDE /* ffft */,
+				162949261ED3D0DB0007ACDE /* readme.txt */,
+			);
+			path = "FFTReal-2.11";
+			sourceTree = "<group>";
+		};
+		162948F61ED3D0DB0007ACDE /* ffft */ = {
+			isa = PBXGroup;
+			children = (
+				162948F71ED3D0DB0007ACDE /* Array.h */,
+				162948F81ED3D0DB0007ACDE /* Array.hpp */,
+				162948F91ED3D0DB0007ACDE /* def.h */,
+				162948FA1ED3D0DB0007ACDE /* DynArray.h */,
+				162948FB1ED3D0DB0007ACDE /* DynArray.hpp */,
+				162948FC1ED3D0DB0007ACDE /* FFTReal.h */,
+				162948FD1ED3D0DB0007ACDE /* FFTReal.hpp */,
+				162948FE1ED3D0DB0007ACDE /* FFTRealFixLen.h */,
+				162948FF1ED3D0DB0007ACDE /* FFTRealFixLen.hpp */,
+				162949001ED3D0DB0007ACDE /* FFTRealFixLenParam.h */,
+				162949011ED3D0DB0007ACDE /* FFTRealPassDirect.h */,
+				162949021ED3D0DB0007ACDE /* FFTRealPassDirect.hpp */,
+				162949031ED3D0DB0007ACDE /* FFTRealPassInverse.h */,
+				162949041ED3D0DB0007ACDE /* FFTRealPassInverse.hpp */,
+				162949051ED3D0DB0007ACDE /* FFTRealSelect.h */,
+				162949061ED3D0DB0007ACDE /* FFTRealSelect.hpp */,
+				162949071ED3D0DB0007ACDE /* FFTRealUseTrigo.h */,
+				162949081ED3D0DB0007ACDE /* FFTRealUseTrigo.hpp */,
+				162949091ED3D0DB0007ACDE /* OscSinCos.h */,
+				1629490A1ED3D0DB0007ACDE /* OscSinCos.hpp */,
+			);
+			path = ffft;
+			sourceTree = "<group>";
+		};
+		162949271ED3D0DB0007ACDE /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				162949281ED3D0DB0007ACDE /* delaysum.h */,
+				162949291ED3D0DB0007ACDE /* fileinout.h */,
+				1629492A1ED3D0DB0007ACDE /* global.h */,
+				1629492B1ED3D0DB0007ACDE /* parse_options.h */,
+				1629492C1ED3D0DB0007ACDE /* support.h */,
+				1629492D1ED3D0DB0007ACDE /* tdoa.h */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		1629492E1ED3D0DB0007ACDE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1629492F1ED3D0DB0007ACDE /* BeamformIt.cc */,
+				162949301ED3D0DB0007ACDE /* delaysum.cc */,
+				162949311ED3D0DB0007ACDE /* fileinout.cc */,
+				162949321ED3D0DB0007ACDE /* parse_options.cc */,
+				162949331ED3D0DB0007ACDE /* support.cc */,
+				162949341ED3D0DB0007ACDE /* tdoa.cc */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1629493F1ED3D2CD0007ACDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				162949401ED3D2CD0007ACDE /* libsndfile.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		162948E61ED3CFE20007ACDE /* BeamformIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 162948EE1ED3CFE20007ACDE /* Build configuration list for PBXNativeTarget "BeamformIt" */;
+			buildPhases = (
+				162948E31ED3CFE20007ACDE /* Sources */,
+				162948E41ED3CFE20007ACDE /* Frameworks */,
+				162948E51ED3CFE20007ACDE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeamformIt;
+			productName = BeamformIt;
+			productReference = 162948E71ED3CFE20007ACDE /* BeamformIt */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		162948DF1ED3CFE20007ACDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = godock;
+				TargetAttributes = {
+					162948E61ED3CFE20007ACDE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 162948E21ED3CFE20007ACDE /* Build configuration list for PBXProject "BeamformIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 162948DE1ED3CFE20007ACDE;
+			productRefGroup = 162948E81ED3CFE20007ACDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				162948E61ED3CFE20007ACDE /* BeamformIt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		162948E31ED3CFE20007ACDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1629493D1ED3D0DB0007ACDE /* support.cc in Sources */,
+				162949391ED3D0DB0007ACDE /* BeamformIt.cc in Sources */,
+				1629493E1ED3D0DB0007ACDE /* tdoa.cc in Sources */,
+				1629493C1ED3D0DB0007ACDE /* parse_options.cc in Sources */,
+				1629493A1ED3D0DB0007ACDE /* delaysum.cc in Sources */,
+				1629493B1ED3D0DB0007ACDE /* fileinout.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		162948EC1ED3CFE20007ACDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		162948ED1ED3CFE20007ACDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		162948EF1ED3CFE20007ACDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(SRCROOT)/external/FFTReal-2.11",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		162948F01ED3CFE20007ACDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(SRCROOT)/external/FFTReal-2.11",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		162948E21ED3CFE20007ACDE /* Build configuration list for PBXProject "BeamformIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162948EC1ED3CFE20007ACDE /* Debug */,
+				162948ED1ED3CFE20007ACDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		162948EE1ED3CFE20007ACDE /* Build configuration list for PBXNativeTarget "BeamformIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162948EF1ED3CFE20007ACDE /* Debug */,
+				162948F01ED3CFE20007ACDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 162948DF1ED3CFE20007ACDE /* Project object */;
+}
